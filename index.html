@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/2216cb6a92.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <div class="container">
             <nav>
@@ -36,17 +37,17 @@
             </nav>
 
             <div class="top-logo">
-                <a href="/"><img src="/assets/images/site-logo.png" /></a>
+                <a href="/"><img src="/assets/images/site-logo.png" alt="Site Logo" /></a>
             </div>
         </div>  
     </header>
 
-    <main>
+    <main id="main-content">
         <div class="container">
             <article>
                 <div class="image-part">
                     <a href="">
-                        <img width="960" height="750" src="/assets/images/top-places-you-should-visit-right-now.jpg" />  
+                        <img width="960" height="750" src="/assets/images/top-places-you-should-visit-right-now.jpg" alt="Top Places You Should Visit Right Now" />  
                     </a>
                 </div>
 
@@ -60,15 +61,15 @@
                     <div class="post-list-entry">
                         <p>Contact us to learn more!</p>
                         <form action="/" method="post">
-                            <label>Name</label>
-                            <input type="text" name="fullname" required />
+                            <label for="fullname">Name</label>
+                            <input type="text" id="fullname" name="fullname" aria-required="true" required />
                             
-                            <label>Email</label>
-                            <input type="email" name="email" required />
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" aria-required="true" required />
 
                             <div class="flexbox">
                                 <span></span>
-                                <label class="check">Check Me (required)</label>
+                                <label for="check" class="check">Check Me (required)</label>
                             </div>
 
                             <input type="submit" value="Submit" />
@@ -82,7 +83,7 @@
     <footer id="footer">
         <div class="container">
             <div class="footer-logo">
-                <a href=""><img src="/assets/images/footer-logo.png" /></a>
+                <a href=""><img src="/assets/images/footer-logo.png" alt="Footer Logo" /></a>
             </div>  
 
             <div class="footer-social-links">
