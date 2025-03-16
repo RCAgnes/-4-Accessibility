@@ -18,6 +18,8 @@ a {
 
 a:focus, a:hover {
     text-decoration: underline;
+    outline: 2px solid #1a73e8;
+    outline-offset: 2px;
 }
 
 button {
@@ -30,6 +32,8 @@ button {
 
 button:focus, button:hover {
     background-color: #1558b0;
+    outline: 2px solid #1558b0;
+    outline-offset: 2px;
 }
 
 label {
@@ -48,4 +52,21 @@ input, textarea {
 input:focus, textarea:focus {
     border-color: #1a73e8;
     outline: none;
+    outline: 2px solid #1a73e8;
+    outline-offset: 2px;
+}
+
+/* Skip link styles */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #1a73e8;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
 }
